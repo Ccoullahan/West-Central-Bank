@@ -1,0 +1,1 @@
+<h2>Welcome, {{ user }}</h2><p>Balance: ${{ balance }}</p><form action="/deposit" method="post"><input name="amount"><button>Deposit</button></form><form action="/withdraw" method="post"><input name="amount"><button>Withdraw</button></form><h3>Transactions:</h3><ul>{% for t in transactions %}<li>{{ t }}</li>{% endfor %}</ul><a href="/logout">Logout</a>
